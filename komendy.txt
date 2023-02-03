@@ -1,0 +1,5 @@
+python train.py --dir_image=../Images --dir_mask=../Masks --image_size=416 --data_train=img
+
+python demo.py --dir_image=../Images/img --pre_train=../experiments/aotgan_img_pconv416/G0070000.pt
+
+python generatedata.py --dir_image=../test2 --pre_train=../experiments/aotgan_img_pconv416/G0160000.pt --image_size=416 --dir_mask=../Masks --outputs=results
